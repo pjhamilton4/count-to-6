@@ -47,6 +47,13 @@
 // console.log(`The minimum of [${inArray}] is ${min}`);
 
 //7 of 10
-module.exports = function average(...nums){
-    return nums.reduce((a,b) => a + b) / nums.length; 
+// module.exports = function average(...nums){
+//     return nums.reduce((a,b) => a + b) / nums.length; 
+// }
+
+//8 of 10
+module.exports = function midpoint(lower = 0, upper = 1){
+    let combined = lower + upper;
+    let mid = combined / 2;
+    return mid;
 }
