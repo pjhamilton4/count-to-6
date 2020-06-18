@@ -31,10 +31,17 @@
 // foot.kick();
 
 //5 of 10
-let userArray = process.argv.slice(2);
+// let userArray = process.argv.slice(2);
 
-let data = {};
+// let data = {};
 
-[, data.username, data.email] = userArray;
+// [, data.username, data.email] = userArray;
 
-console.log(data);
+// console.log(data);
+
+//6 of 10
+let inArray = process.argv.slice(2);
+
+var min = Math.min(...inArray);
+
+console.log(`The minimum of [${inArray}] is ${min}`);
