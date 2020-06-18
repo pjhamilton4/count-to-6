@@ -40,8 +40,13 @@
 // console.log(data);
 
 //6 of 10
-let inArray = process.argv.slice(2);
+// let inArray = process.argv.slice(2);
 
-var min = Math.min(...inArray);
+// var min = Math.min(...inArray);
 
-console.log(`The minimum of [${inArray}] is ${min}`);
+// console.log(`The minimum of [${inArray}] is ${min}`);
+
+//7 of 10
+module.exports = function average(...nums){
+    return nums.reduce((a,b) => a + b) / nums.length; 
+}
