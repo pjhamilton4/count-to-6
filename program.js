@@ -19,14 +19,22 @@
 // console.log('[' + inputs.join(',') + ']' + " becomes \"" + result + "\"");
 
 //4 of 10
+// const yelp = "Ouch!";
 
-const yelp = "Ouch!";
+// let foot = {
+//     kick: function () {
+//         setImmediate(() => {
+//             console.log(yelp);
+//         });
+//     }
+// };
+// foot.kick();
 
-let foot = {
-    kick: function () {
-        setImmediate(() => {
-            console.log(yelp);
-        });
-    }
-};
-foot.kick();
+//5 of 10
+let userArray = process.argv.slice(2);
+
+let data = {};
+
+[, data.username, data.email] = userArray;
+
+console.log(data);
