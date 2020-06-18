@@ -9,11 +9,24 @@
 // console.log(string);
 
 //3 of 10
-const inputs = process.argv.slice(2);
+// const inputs = process.argv.slice(2);
 
-const reducer = (accu, currVal) => accu + currVal;
-const mapper = (element) => element.substring(0, 1);
+// const reducer = (accu, currVal) => accu + currVal;
+// const mapper = (element) => element.substring(0, 1);
 
-let result = inputs.map(mapper)
-    .reduce(reducer);
-console.log('[' + inputs.join(',') + ']' + " becomes \"" + result + "\"");
+// let result = inputs.map(mapper)
+//     .reduce(reducer);
+// console.log('[' + inputs.join(',') + ']' + " becomes \"" + result + "\"");
+
+//4 of 10
+
+const yelp = "Ouch!";
+
+let foot = {
+    kick: function () {
+        setImmediate(() => {
+            console.log(yelp);
+        });
+    }
+};
+foot.kick();
