@@ -52,8 +52,12 @@
 // }
 
 //8 of 10
-module.exports = function midpoint(lower = 0, upper = 1){
-    let combined = lower + upper;
-    let mid = combined / 2;
-    return mid;
-}
+// module.exports = function midpoint(lower = 0, upper = 1){
+//     let combined = lower + upper;
+//     let mid = combined / 2;
+//     return mid;
+// }
+
+//9 of 10
+module.exports = (str, num = str.length) => `${str}${'!'.repeat(num)}`;
+
